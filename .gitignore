@@ -61,5 +61,5 @@ typings/
 .next
 
 # .csv and .json files in dataFiles.
-dataFiles/**.csv
-dataFiles/**.json
+dataFiles/*
+dataFiles/*.*

@@ -6,7 +6,7 @@ const writeTo= (data,fileName) => {
     // Write to file
     const filePath = path.join(process.cwd(), `src/dataFiles/${fileName}`);
     const file = fs.createWriteStream(filePath);
-    file.write(data);
+    file.write(JSON.stringify(data));
     file.end();
 }
 
