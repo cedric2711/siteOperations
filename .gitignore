@@ -59,3 +59,7 @@ typings/
 
 # next.js build output
 .next
+
+# .csv and .json files in dataFiles.
+dataFiles/**.csv
+dataFiles/**.json
