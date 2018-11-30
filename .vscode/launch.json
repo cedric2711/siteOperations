@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "protocol": "inspector",
+            "request": "launch",
+            "name": "Extract Data with TestCafe",
+            "program": "${workspaceRoot}/node_modules/testcafe/bin/testcafe.js",
+            "args": [
+                "chrome",
+                "${workspaceRoot}/src/extract.js",
+                "-e",
+                "-u"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceRoot}"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Process Data",
+            "program": "${workspaceFolder}/src/process.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Extract Data with puppeteer",
+            "program": "${workspaceFolder}/src/extractPuppetteer.js"
+        }
+    ]
+}
